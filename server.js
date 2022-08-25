@@ -26,3 +26,4 @@ client.connect();
 client.query("select * from sample", (err, res)=>{
     console.log(res.rows[0]["idx"] + "位 " + res.rows[0]["name"]);
 });
+client.end();
