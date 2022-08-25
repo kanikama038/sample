@@ -14,16 +14,16 @@ io.on("connection", (socket)=>{
     });
 });
 
-// const { Client } = require("pg");
-// const client = new Client({
-//     connetionString: process.env.DATABASE_URL,
-//     ssl: {
-//         rejectUnauthorized: false
-//     }
-// });
-// client.connect();
+const { Client } = require("pg");
+const client = new Client({
+    connetionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+    }
+});
+client.connect();
 
-// client.query("select * from sample;", (err, res)=>{
-//     console.log(res.rows[0]["idx"] + "位 " + res.rows[0]["name"]);
-// });
-// client.end();
+client.query("select * from sample;", (err, res)=>{
+    console.log(res.rows[0]["idx"] + "位 " + res.rows[0]["name"]);
+    client.end();
+});
