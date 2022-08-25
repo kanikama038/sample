@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <input type="text" id="text">
+    <div id="receive"></div>
+
+    <script>
+        const socket = io();
+
+        const text = document.getElementById("text");
+        const receive = document.getElementById("receive");
+        text.onkeydown=(e)=>{
+            if (e.key=="Enter"){
+                socket.emit("a", {value: text.value});
+            }
+        };
+        socket.on("b", (data)=>{
+            receive.textContent = data.value;
+            text.value = null;
+        });
+    </script>
+</body>
+</html>
