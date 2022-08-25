@@ -23,7 +23,7 @@ const client = new Client({
 });
 client.connect();
 
-client.query("select * from sample;", (err, res)=>{
-    console.log(res.rows[0]["idx"] + "位 " + res.rows[0]["name"]);
-    client.end();
-});
+// client.query("select * from sample;", (err, res)=>{
+//     console.log(res.rows[0]["idx"] + "位 " + res.rows[0]["name"]);
+//     client.end();
+// });
