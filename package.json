@@ -1,11 +1,19 @@
 {
   "name": "sample",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "start"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanikama038/kanikama038.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kanikama038/kanikama038/issues"
+  },
+  "homepage": "https://github.com/kanikama038/kanikama038#readme",
+  "description": ""
 }
