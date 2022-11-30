@@ -17,6 +17,8 @@
   "homepage": "https://github.com/kanikama038/kanikama038#readme",
   "description": "",
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
     "socket.io": "^4.5.4"
   }
 }
