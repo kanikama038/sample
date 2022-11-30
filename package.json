@@ -15,5 +15,8 @@
     "url": "https://github.com/kanikama038/kanikama038/issues"
   },
   "homepage": "https://github.com/kanikama038/kanikama038#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "socket.io": "^4.5.4"
+  }
 }
